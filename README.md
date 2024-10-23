@@ -130,6 +130,13 @@ git diff --word-diff=color --word-diff-regex="[ ]+|[^ ]+" data/ocr-correction/Ar
 Sometimes, the GPT output produces `^M` line endings that result in some distracting output because `gitdiff` doesn't actually allow them. 
 You could fix this in the GPT prompt or just ignore them. 
 
+Here are two examples images of what the result would look like: 
+- character-level errors
+![output of the first command](https://github.com/sarahalang/LLM-powered-OCR-correction/blob/main/ocr-diff-1.png)
+- word-level errors (including whitespace errors)
+![output of the second command (whitespace)](https://github.com/sarahalang/LLM-powered-OCR-correction/blob/main/ocr-diff-2.png)
+
+
 ## Helper script
 
 The script `what-gpts-available-for-apiaccess.py` shows you which OpenAI models are available to you through the API. Unfortunately, this may not be the same as in your Pro account (if you have one) and the billing is also separate. Thankfully, I have found that GPT 3.5. turbo works best for my use case (and it is quite cheap). 
