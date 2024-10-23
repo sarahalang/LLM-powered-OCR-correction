@@ -136,6 +136,8 @@ Here are two examples images of what the result would look like:
 - word-level errors (including whitespace errors)
 ![output of the second command (whitespace)](https://github.com/sarahalang/LLM-powered-OCR-correction/blob/main/ocr-diff-2.png)
 
+And this is what it would look like if you directly committed the gpt-output over the original transkribus-txt in github (to have it auto-visualized in the version history functionality, see [here](https://github.com/sarahalang/LLM-powered-OCR-correction/commit/da09fc070bb7a76dc8164c154eef8e89d83e5008)):
+![example of diff in github version history](https://github.com/sarahalang/LLM-powered-OCR-correction/blob/main/github-diff.png)
 
 ## Helper script
 
