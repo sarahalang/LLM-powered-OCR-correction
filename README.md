@@ -123,9 +123,9 @@ Then, the script `generate-diff.py` is used to automatically create the diff com
 Unfortunately, two commands are required per page as the first one does not visualize missing whitespaces, for instance. 
 
 ```
-# Comparing '0123_hab-arcana-drucke_248-quod-1s_00001-eb04-123.txt' in 'Arcana'
-git diff --color-words=. data/ocr-correction/Arcana/transkribus-output/0123_hab-arcana-drucke_248-quod-1s_00001-eb04-123.txt data/ocr-correction/Arcana/gpt-output/0123_hab-arcana-drucke_248-quod-1s_00001-eb04-123.txt;
-git diff --word-diff=color --word-diff-regex="[ ]+|[^ ]+" data/ocr-correction/Arcana/transkribus-output/0123_hab-arcana-drucke_248-quod-1s_00001-eb04-123.txt data/ocr-correction/Arcana/gpt-output/0123_hab-arcana-drucke_248-quod-1s_00001-eb04-123.txt;
+# Comparing '0122_hab-arcana-drucke_248-quod-1s_00001-eb04-122.txt' in 'Arcana'
+git diff --color-words=. data/ocr-correction/Arcana/transkribus-output/0122_hab-arcana-drucke_248-quod-1s_00001-eb04-122.txt data/ocr-correction/Arcana/gpt-output/0122_hab-arcana-drucke_248-quod-1s_00001-eb04-122.txt;
+git diff --word-diff=color --word-diff-regex="[ ]+|[^ ]+" data/ocr-correction/Arcana/transkribus-output/0122_hab-arcana-drucke_248-quod-1s_00001-eb04-122.txt data/ocr-correction/Arcana/gpt-output/0122_hab-arcana-drucke_248-quod-1s_00001-eb04-122.txt;
 ```
 Sometimes, the GPT output produces `^M` line endings that result in some distracting output because `gitdiff` doesn't actually allow them. 
 You could fix this in the GPT prompt or just ignore them. 
