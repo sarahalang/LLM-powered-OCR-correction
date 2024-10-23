@@ -1,4 +1,4 @@
-# LLM-powered-OCR-correction
+![0122_hab-arcana-drucke_248-quod-1s_00001-eb04-122](https://github.com/user-attachments/assets/22f9d380-78ac-496b-a7f0-ea9ce9887bb0)# LLM-powered-OCR-correction
 This repo contains files downloaded from Transkribus with corresponding suggested OCR improvements (performed using ChatGPT API).
 
 It follows the editor-in-the-loop approach to using LLM assistants in Digital Humanities work.
@@ -118,7 +118,7 @@ gpt-output/
 └── page_3.txt
 ```
 
-## (optional) Creating the git diff commands
+## Creating the git diff commands
 Then, the script `generate-diff.py` is used to automatically create the diff commands to compare transcriptions for individual pages (taking the directory structure into account).
 Unfortunately, two commands are required per page as the first one does not visualize missing whitespaces, for instance. 
 
@@ -131,10 +131,15 @@ Sometimes, the GPT output produces `^M` line endings that result in some distrac
 You could fix this in the GPT prompt or just ignore them. 
 
 Here are two examples images of what the result would look like: 
-- character-level errors
+- character-level errors 
 ![output of the first command](https://github.com/sarahalang/LLM-powered-OCR-correction/blob/main/ocr-diff-1.png)
-- word-level errors (including whitespace errors)
+- word-level errors (including whitespace errors) 
 ![output of the second command (whitespace)](https://github.com/sarahalang/LLM-powered-OCR-correction/blob/main/ocr-diff-2.png)
+
+For your reference, here is the facsimile image: 
+![original image for which the transcription is generated](https://github.com/sarahalang/LLM-powered-OCR-correction/blob/main/0122_hab-arcana-drucke_248-quod-1s_00001-eb04-122.png)
+(To run the script, it would need to be in `data/ocr-correction/Arcana/images`, not where it is currently placed in the directory structure of this github repo.) 
+
 
 And this is what it would look like if you directly committed the gpt-output over the original transkribus-txt in github (to have it auto-visualized in the version history functionality, see [here](https://github.com/sarahalang/LLM-powered-OCR-correction/commit/da09fc070bb7a76dc8164c154eef8e89d83e5008)):
 ![example of diff in github version history](https://github.com/sarahalang/LLM-powered-OCR-correction/blob/main/github-diff.png)
