@@ -41,7 +41,7 @@ project_root/
 │           ├── images/               # Contains the corresponding images for the text pages
 │           └── gpt-output/           # Output directory for the corrected text files
 │
-├── script.py                    # The main Python script for processing
+├── korr-ocr.py                    # The main Python script for processing
 ```
 
 ### File Details:
