@@ -79,7 +79,7 @@ pip install openai
    Run the script using Python:
 
    ```bash
-   python script.py
+   python korr-ocr.py
    ```
 
    You will be prompted to input the name of the sub-directory (representing a PDF) you want to process. For example:
@@ -135,3 +135,5 @@ You could fix this in the GPT prompt or just ignore them.
 The script `what-gpts-available-for-apiaccess.py` shows you which OpenAI models are available to you through the API. Unfortunately, this may not be the same as in your Pro account (if you have one) and the billing is also separate. Thankfully, I have found that GPT 3.5. turbo works best for my use case (and it is quite cheap). 
 
 
+---
+This README and the code were created with assistance from ChatGPT 4o and o1-preview. 
