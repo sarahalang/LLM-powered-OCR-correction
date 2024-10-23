@@ -1,4 +1,4 @@
-![0122_hab-arcana-drucke_248-quod-1s_00001-eb04-122](https://github.com/user-attachments/assets/22f9d380-78ac-496b-a7f0-ea9ce9887bb0)# LLM-powered-OCR-correction
+# LLM-powered-OCR-correction
 This repo contains files downloaded from Transkribus with corresponding suggested OCR improvements (performed using ChatGPT API).
 
 It follows the editor-in-the-loop approach to using LLM assistants in Digital Humanities work.
