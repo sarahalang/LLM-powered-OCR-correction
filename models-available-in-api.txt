@@ -1,0 +1,21 @@
+Available models:
+tts-1
+tts-1-1106
+dall-e-2
+gpt-3.5-turbo-instruct
+gpt-3.5-turbo-0125
+gpt-3.5-turbo
+babbage-002
+davinci-002
+dall-e-3
+gpt-4o-mini
+tts-1-hd
+tts-1-hd-1106
+gpt-4o-mini-2024-07-18
+text-embedding-ada-002
+gpt-3.5-turbo-16k
+text-embedding-3-small
+text-embedding-3-large
+whisper-1
+gpt-3.5-turbo-1106
+gpt-3.5-turbo-instruct-0914
